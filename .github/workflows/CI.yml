@@ -60,5 +60,5 @@ jobs:
           docker tag p2gps/order ${{ DOCKERHUB_USERNAME }}/p2gps:order 
       - name: Push a DockerHub 
         run: | 
-            docker push ${{ DOCKERHUB_PASSWORD }}/p2gps:order 
-            docker push ${{ DOCKERHUB_PASSWORD }}/p2gps:web
+            docker push tomy11/p2gps:order 
+            docker push tomy11/p2gps:web
