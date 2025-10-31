@@ -57,8 +57,8 @@ jobs:
       - name: Etiquetar con formato DockerHub 
         run: | 
           docker tag p2gps/web ${{ secrets.tomy11 }}/p2gps:web 
-          docker tag p2gps/order ${{ secrets._RRSdAK3nQf26$v }}/p2gps:order 
+          docker tag p2gps/order ${{ secrets.tomy11 }}/p2gps:order 
       - name: Push a DockerHub 
         run: | 
             docker push ${{ secrets.tomy11 }}/p2gps:order 
-            docker push ${{ secrets._RRSdAK3nQf26$v }}/p2gps:web
+            docker push ${{ secrets.tomy11 }}/p2gps:web
