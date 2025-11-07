@@ -18,7 +18,7 @@ services: # ahora se indican los servicios por el orden en que se quiere que se 
     volumes: 
       - "db-data:/data/db" # para guardar en local los cambios en el contenedor 
   order: 
-    image: tomy11/p2gps:order 
+    image: paberlo/p2gps:order 
     depends_on: 
       - "mongo"  #le pasamos al servicio order la IP del servicio mongo 
     deploy: 
